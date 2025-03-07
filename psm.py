@@ -8,8 +8,8 @@ st.markdown("""
 <style>
     .main {text-align: center;}
     .stTextInput {width: 60% !important; margin: auto; }
-    .stButton button {width:50%; background-color #4CAF50; color: white; font-size:18px;}
-    .stButton button:hover { background-color: #45a049;}                
+    .stButton button {width:50%; background-color blue; color: white; font-size:18px;}
+    .stButton button:hover { background-color: red; color:white}                
 </style>           
 """, unsafe_allow_html=True)
 
@@ -27,7 +27,7 @@ def check_password_strength(password):
     else:
         feedback.append("❌Password should be **atleast 8 character long**.")
 
-    if re.search(r"[]", password) and re.search(r"[a-z]", password):
+    if re.search(r"[A-z]", password) and re.search(r"[a-z]", password):
         score += 1
     else:
         feedback.append("❌Password should include **both uppercase (A-Z) and lower case (a-z) letters**.")
