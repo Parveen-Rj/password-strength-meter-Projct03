@@ -8,8 +8,8 @@ st.markdown("""
 <style>
     .main {text-align: center;}
     .stTextInput {width: 60% !important; margin: auto; }
-    .stButton button {width:50%; background-color blue; color: white; font-size:18px;}
-    .stButton button:hover { background-color: red; color: white}                
+    .stButton button {width:50%; background-color: blue; color: black; font-size:18px;}
+    .stButton button:hover { background-color: red; color: black}                
 </style>           
 """, unsafe_allow_html=True)
 
